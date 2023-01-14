@@ -1,7 +1,7 @@
 ---
 name: MQTT IO with i2c fix
 version: dev
-slug: mqtt-io
+slug: mqtt-io-with-i2c-fix
 description: Expose GPIO modules and digital sensors via MQTT for remote control and monitoring.
 url: https://github.com/R081n/addon-mqtt-io
 arch:
