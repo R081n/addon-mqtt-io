@@ -1,5 +1,5 @@
 ---
-name: MQTT IO
+name: MQTT IO with i2c fix
 version: dev
 slug: mqtt-io
 description: Expose GPIO modules and digital sensors via MQTT for remote control and monitoring.
