@@ -3,7 +3,7 @@ ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.7
 FROM ${BUILD_FROM}
 
 # Set shell
-SHELL ["/bin/bash"]
+#SHELL ["/bin/bash"]
 
 # Copy Python requirements file
 COPY requirements.txt /tmp/
