@@ -3,7 +3,7 @@ ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.7
 FROM ${BUILD_FROM}
 
 # Set shell
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash"]
 
 # Copy Python requirements file
 COPY requirements.txt /tmp/
@@ -11,7 +11,7 @@ COPY requirements.txt /tmp/
 # Setup base
 # hadolint ignore=DL3003,DL3042
 
-RUN   apk add --no-cache --virtual .build-dependencies \
+RUN   apk add --no-cache \
     build-base=0.5-r3 \
     libffi-dev=3.4.2-r1 \
     py3-wheel=0.37.1-r0 \
