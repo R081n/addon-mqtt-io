@@ -33,8 +33,6 @@ RUN find /usr \
     -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
     -exec rm -rf '{}' + 
 
-RUN apk del --no-cache --purge .build-dependencies
-
 # Copy root filesystem
 COPY rootfs /
 
