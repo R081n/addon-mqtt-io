@@ -11,6 +11,8 @@ COPY requirements.txt /tmp/
 # Setup base
 # hadolint ignore=DL3003,DL3042
 
+RUN apk update   && apk upgrade
+
 RUN   apk add --no-cache \
     build-base=0.5-r3 \
     libffi-dev=3.4.2-r1 \
