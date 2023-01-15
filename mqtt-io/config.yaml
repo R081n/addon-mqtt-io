@@ -13,7 +13,7 @@ gpio: true
 privileged:
     - SYS_RAWIO
 devices:
-    - /dev/
+    - /dev
 map:
     - config:rw
     - share:rw
