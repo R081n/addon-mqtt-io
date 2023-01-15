@@ -12,6 +12,7 @@ uart: true
 gpio: true
 privileged:
     - SYS_RAWIO
+full_access: true
 devices:
     - /dev
 map:
